@@ -1,20 +1,14 @@
--- Sets the leader key to ' '
-vim.g.mapleader = ' '
+vim.g.mapleader = ' ' -- Sets the leader key to ' '
 vim.g.maplocalleader = ' '
 
--- Sets Nerd Font usage
-vim.g.have_nerd_font = true
+vim.g.have_nerd_font = true -- Sets Nerd Font usage
 
--- Make line numbers default and make relative
-vim.o.number = true
+vim.o.number = true -- make line numbers default and make relative
 vim.o.relativenumber = true
 
--- Enable mouse mode, can be useful for resizing splits for example!
-vim.o.mouse = 'a'
+vim.o.mouse = 'a' -- Enable mouse mode, can be useful for resizing splits for example!
 
--- Don't show the mode, since it's already in the status line
-vim.o.showmode = true
-
+vim.o.showmode = false -- Don't show the mode, since it's already in the status line
 -- Sync clipboard between OS and Neovim.
 vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
@@ -61,7 +55,7 @@ vim.o.inccommand = 'split'
 vim.o.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.o.scrolloff = 10
+vim.o.scrolloff = 5
 
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)
